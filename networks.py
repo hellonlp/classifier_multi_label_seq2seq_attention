@@ -79,7 +79,6 @@ class NetworkAlbertSeq2Seq(object):
                                                                 hp.init_checkpoint)
                 tf.train.init_from_checkpoint(hp.init_checkpoint, assignment_map)
 
-                # Loss and Optimizer
         if self.is_training:
             with tf.name_scope("loss"):
                 # Global step
