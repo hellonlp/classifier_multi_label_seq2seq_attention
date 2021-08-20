@@ -64,7 +64,7 @@ class NetworkAlbertSeq2Seq(object):
                                                                                            self.encode_state,
                                                                                            _is_training=is_training)
 
-            # Initial embedding by BERT
+            
         ckpt = tf.train.get_checkpoint_state(hp.saved_model_path)
         checkpoint_suffix = ".index"
         if ckpt and tf.gfile.Exists(ckpt.model_checkpoint_path + checkpoint_suffix):
